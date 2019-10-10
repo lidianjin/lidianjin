@@ -22,7 +22,7 @@ function run() {
             echo('Error: Git add failed');
             exit(1);
         }
-        if (exec('git commit -am "blog auto_backup script\'s commit"').code !== 0) {
+        if (exec('git commit -m "blog auto_backup script\'s commit"').code !== 0) {
             echo('Error: Git commit failed');
             exit(1);
         }
